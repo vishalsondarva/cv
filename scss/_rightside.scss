@@ -1,0 +1,162 @@
+.side_Right {
+    background-color: white;
+    padding: 30px 80px;
+    width: calc(100% - 35%);
+    .profile_name {
+        padding: 60px 0;
+        letter-spacing: 1px;
+        position: relative;
+        min-height: 240px;
+        &::after {
+            content: "";
+            position: absolute;
+            right: -40px;
+            bottom: 0;
+            width: 25px;
+            height: 80%;
+            background-color: $primary-color;
+            border-radius: 50px;
+        }
+        h1 {
+            font-size: 54px;
+            margin: 0;
+            strong {
+                color: $primary-color;
+            }
+        }
+        h2 {
+            font-size: 42px;
+            margin: 0;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+    }
+    .areaBox {
+        margin: 60px auto;
+        h3 {
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: $primary-color;
+        }
+
+        &.experience{
+            .list{
+                font-size: 16px;
+                margin: 40px auto;
+                strong{
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+
+        &.skill{
+            .list{
+                margin: 30px auto;
+                display: flex;
+                align-items: center;
+                position: relative;
+                strong{
+                    width: 130px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+                span{
+                    width: 300px;
+                    height: 5px;
+                    border-radius: 10px;
+                    background-color: $primary-color;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: -5px;
+                        left: 100%;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50px;
+                        background-color: $primary-color;
+                    }
+                }
+                &.p-90{
+                    span{
+                        &::after{
+                           left: 90%;
+                        }
+
+                    }
+                }
+                &.p-80{
+                    span{
+                        &::after{
+                           left: 80%;
+                        }
+
+                    }
+                }
+                &.p-75{
+                    span{
+                        &::after{
+                           left: 75%;
+                        }
+
+                    }
+                }
+                &.p-70{
+                    span{
+                        &::after{
+                           left: 70%;
+                        }
+
+                    }
+                }
+                &.p-60{
+                    span{
+                        &::after{
+                           left: 60%;
+                        }
+
+                    }
+                }
+                &.p-50{
+                    span{
+                        &::after{
+                           left: 50%;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        &.interests{
+            .box{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                font-size: 16px;
+                margin: 30px auto;
+                p{
+                    margin: 0;
+                    margin-right: 30px;
+                }
+            }
+        }
+        &.portfolio{
+            a{
+                display: block;
+                margin: 20px auto;
+                font-size: 16px;
+                color: $font-color;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
