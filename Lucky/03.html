@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="body_wrap">
+        <section class="screen_3">
+            <div class="top_header ">
+                <div class="back_arrow">
+                    <a href="#back" class="arrow">
+                        <img src="images/icons/arrow-left-solid.svg" class="img" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="form_wrap btn_fix">
+                <form action="#form" class="form">
+                    <div class="title_wrap">
+                        <h3>Enter OTP</h3>
+                        <p>
+                            OTP has been Sent to your Mobile
+                            Number +91 xxxx21
+                        </p>
+                    </div>
+
+                    <div class="otp_code">
+                        <div class="otp_code__inputs">
+                            <input type="text" maxlength="1" required />
+                            <input type="text" maxlength="1" required/>
+                            <input type="text" maxlength="1" required/>
+                            <input type="text" maxlength="1" required/>
+                            <input type="text" maxlength="1" required/>
+                        </div>
+                        <input type="hidden" id="verificationCode" />
+                        <p class="resend mt-1_25 pl-0_5">
+                            <span>15</span>Resend
+                        </p>
+                    </div>
+
+                    <div class="btn_wrap">
+                        <button class="btn btn_primary w-100">
+                            Verify
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
