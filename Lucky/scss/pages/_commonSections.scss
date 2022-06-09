@@ -1,0 +1,26 @@
+// splash_screen
+.splash_screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 100vh;
+}
+
+// screen_2
+.screen_2{
+    .logo_wrap{
+        text-align: center;
+        margin: auto;
+        max-width: 175px;
+        padding: 1.25rem 0;
+        padding-bottom: 2rem;
+        img{
+            margin: auto;
+            display: block;
+        }
+    }
+    .form_wrap{
+        padding: 0 1.25rem;
+    }
+}
