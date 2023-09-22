@@ -10856,9 +10856,9 @@ h1, h2, h3, h4, h5,
 
 .ftco-navbar-light.scrolled .navbar-brand {
   color: #000000;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 24px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* font-size: 24px; */
 }
 
 .navbar-brand {
@@ -10867,18 +10867,23 @@ h1, h2, h3, h4, h5,
   position: relative;
   z-index: 0;
 }
-
-.navbar-brand:after {
+.navbar-brand span{
+  position: relative;
+  display: inline-block;
+  margin-right: 4px;
+  line-height: 40px;
+}
+.navbar-brand span:after {
   position: absolute;
   top: 50%;
-  left: -12px;
+  left: 50%;
   width: 40px;
   height: 40px;
   content: '';
   background: #3e64ff;
   z-index: -1;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(-50%);
   border-radius: 50%;
 }
 
@@ -12875,7 +12880,7 @@ textarea.form-control {
 }
 
 .side_left .boxArea {
-  margin: 80px auto;
+  margin: 60px auto;
 }
 
 .side_left .boxArea .title {
@@ -12920,9 +12925,10 @@ textarea.form-control {
 }
 
 .side_left .boxArea .contentArea {
-  margin: auto 40px 0 80px;
+  margin: auto 0px 0 80px;
   letter-spacing: 0.5px;
   line-height: 1.6;
+  font-size: 14px;
 }
 
 .side_left .boxArea.contact .contentArea {
@@ -13028,7 +13034,7 @@ textarea.form-control {
     font-size: 38px !important;
   }
   .main .side_left .profile_name h2 {
-    font-size: 32px !important;
+    font-size: 22px !important;
   }
   .main .side_left .boxArea {
     margin: 60px auto;
@@ -13088,7 +13094,7 @@ textarea.form-control {
 }
 
 .side_Right .profile_name h2 {
-  font-size: 42px;
+  font-size: 24px;
   margin: 0;
   opacity: 0.95;
   font-weight: 400;
@@ -13106,7 +13112,7 @@ textarea.form-control {
 
 .side_Right .areaBox.experience .list {
   font-size: 16px;
-  margin: 40px auto;
+  margin: 30px auto;
 }
 
 .side_Right .areaBox.experience .list strong {
@@ -13231,4 +13237,30 @@ textarea.form-control {
   .shadowBox {
     padding: 0px !important;
   }
+}
+
+.portfolio-section .p-item{
+  position: relative;
+}
+
+.portfolio-section .p-item .fluidbox--ready{
+  position: relative;
+}
+.portfolio-section .p-item .fluidbox--ready::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.portfolio-section .p-item .fluidbox--ready:hover::after{
+  opacity: 1;
+}
+
+.fluidbox--loaded{
+  z-index: 99999;
 }
